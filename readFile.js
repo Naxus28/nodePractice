@@ -1,5 +1,6 @@
 var fs = require('fs');
-// when executed in the node REPL, core node modules like 'fs' don't need to be 'required'
+// when executed in the node REPL, core node modules like 'fs' don't need to be 'required'. We can simply run the functions below and they will be executed
+// we can run the functions all at once via 'node readFile' or enter the REPL and write them out one by one (without the require statement)
 // the unmodified buffer object:
 fs.readFile('sample.txt', function(err, data) {
   if (err) throw err;
