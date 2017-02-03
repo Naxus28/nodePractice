@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<body>
+   <pre>
+   <code>
+      {
+         title:'node',
+         version:'v6.9.2',
+         moduleLoadList:[
+            'Binding contextify',
+            'Binding natives',
+            'NativeModule events',
+            'NativeModule util',
+            'Binding uv',
+            'NativeModule buffer',
+            'Binding buffer',
+            'Binding util',
+            'NativeModule internal/util',
+            'NativeModule timers',
+            'Binding timer_wrap',
+            'NativeModule internal/linkedlist',
+            'NativeModule assert',
+            'NativeModule internal/process',
+            'Binding config',
+            'NativeModule internal/process/warning',
+            'NativeModule internal/process/next_tick',
+            'NativeModule internal/process/promises',
+            'NativeModule internal/process/stdio',
+            'Binding constants',
+            'NativeModule tty',
+            'NativeModule net',
+            'NativeModule stream',
+            'NativeModule _stream_readable',
+            'NativeModule internal/streams/BufferList',
+            'NativeModule _stream_writable',
+            'NativeModule _stream_duplex',
+            'NativeModule _stream_transform',
+            'NativeModule _stream_passthrough',
+            'NativeModule internal/net',
+            'Binding cares_wrap',
+            'Binding tty_wrap',
+            'Binding tcp_wrap',
+            'Binding pipe_wrap',
+            'Binding stream_wrap',
+            'NativeModule internal/repl',
+            'NativeModule readline',
+            'NativeModule internal/readline',
+            'NativeModule repl',
+            'NativeModule internal/module',
+            'NativeModule vm',
+            'NativeModule path',
+            'NativeModule fs',
+            'Binding fs',
+            'Binding fs_event_wrap',
+            'NativeModule console',
+            'Binding signal_wrap',
+            'NativeModule module',
+            'NativeModule domain',
+            'NativeModule os',
+            'Binding os',
+            'NativeModule string_decoder'
+         ],
+         versions:{
+            http_parser:'2.7.0',
+            node:'6.9.2',
+            v8:'5.1.281.88',
+            uv:'1.9.1',
+            zlib:'1.2.8',
+            ares:'1.10.1-DEV',
+            icu:'57.1',
+            modules:'48',
+            openssl:'1.0.2j'
+         },
+         arch:'x64',
+         platform:'darwin',
+         release:{
+            name:'node',
+            lts:'Boron',
+            sourceUrl:'https://nodejs.org/download/release/v6.9.2/node-v6.9.2.tar.gz',
+            headersUrl:'https://nodejs.org/download/release/v6.9.2/node-v6.9.2-headers.tar.gz'
+         },
+         argv:[
+            '/usr/local/bin/node'
+         ],
+         execArgv:[
+
+         ],
+         env:{
+            TERM_PROGRAM:'Apple_Terminal',
+            TERM:'xterm-256color',
+            SHELL:'/bin/bash',
+            TMPDIR:'/var/folders/6_/m7xw_3y94_nf4vtgc33m18c40000gp/T/',
+            Apple_PubSub_Socket_Render:'/private/tmp/com.apple.launchd.Go3cMkaLiA/Render',
+            TERM_PROGRAM_VERSION:'361.1',
+            OLDPWD:'/Users/imtloaner317/Desktop/practice',
+            TERM_SESSION_ID:'8E128557-F3EC-47A3-875B-3E28BC9A5698',
+            USER:'imtloaner317',
+            SSH_AUTH_SOCK:'/private/tmp/com.apple.launchd.U4BIjxBZMP/Listeners',
+            __CF_USER_TEXT_ENCODING:'0x1F6:0x0:0x0',
+            PATH:'/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',
+            PWD:'/Users/imtloaner317/Desktop/practice/nodeREPLSnippets',
+            LANG:'en_US.UTF-8',
+            XPC_FLAGS:'0x0',
+            XPC_SERVICE_NAME:'0',
+            HOME:'/Users/imtloaner317',
+            SHLVL:'1',
+            LOGNAME:'imtloaner317',
+            SECURITYSESSIONID:'186a6',
+            _:'/usr/local/bin/node'
+         },
+         pid:10994,
+         features:{
+            debug:false,
+            uv:true,
+            ipv6:true,
+            tls_npn:true,
+            tls_alpn:true,
+            tls_sni:true,
+            tls_ocsp:true,
+            tls:true
+         },
+         _needImmediateCallback:false,
+         execPath:'/usr/local/bin/node',
+         debugPort:5858,
+         _startProfilerIdleNotifier:[
+            Function:_startProfilerIdleNotifier
+         ],
+         _stopProfilerIdleNotifier:[
+            Function:_stopProfilerIdleNotifier
+         ],
+         _getActiveRequests:[
+            Function:_getActiveRequests
+         ],
+         _getActiveHandles:[
+            Function:_getActiveHandles
+         ],
+         reallyExit:[
+            Function:reallyExit
+         ],
+         abort:[
+            Function:abort
+         ],
+         chdir:[
+            Function:chdir
+         ],
+         cwd:[
+            Function:cwd
+         ],
+         umask:[
+            Function:umask
+         ],
+         getuid:[
+            Function:getuid
+         ],
+         geteuid:[
+            Function:geteuid
+         ],
+         setuid:[
+            Function:setuid
+         ],
+         seteuid:[
+            Function:seteuid
+         ],
+         setgid:[
+            Function:setgid
+         ],
+         setegid:[
+            Function:setegid
+         ],
+         getgid:[
+            Function:getgid
+         ],
+         getegid:[
+            Function:getegid
+         ],
+         getgroups:[
+            Function:getgroups
+         ],
+         setgroups:[
+            Function:setgroups
+         ],
+         initgroups:[
+            Function:initgroups
+         ],
+         _kill:[
+            Function:_kill
+         ],
+         _debugProcess:[
+            Function:_debugProcess
+         ],
+         _debugPause:[
+            Function:_debugPause
+         ],
+         _debugEnd:[
+            Function:_debugEnd
+         ],
+         hrtime:[
+            Function:hrtime
+         ],
+         cpuUsage:[
+            Function:cpuUsage
+         ],
+         dlopen:[
+            Function:dlopen
+         ],
+         uptime:[
+            Function:uptime
+         ],
+         memoryUsage:[
+            Function:memoryUsage
+         ],
+         binding:[
+            Function:binding
+         ],
+         _linkedBinding:[
+            Function:_linkedBinding
+         ],
+         _events:{
+            warning:[
+               Function
+            ],
+            newListener:[
+               Function
+            ],
+            removeListener:[
+               Function
+            ],
+            SIGWINCH:[
+               [
+                  Function
+               ],
+               [
+                  Function
+               ]
+            ]
+         },
+         _rawDebug:[
+            Function
+         ],
+         _eventsCount:4,
+         domain:[
+            Getter/Setter
+         ],
+         _maxListeners:undefined,
+         _fatalException:[
+            Function
+         ],
+         _exiting:false,
+         assert:[
+            Function
+         ],
+         config:{
+            target_defaults:{
+               cflags:[
+
+               ],
+               default_configuration:'Release',
+               defines:[
+
+               ],
+               include_dirs:[
+
+               ],
+               libraries:[
+
+               ]
+            },
+            variables:{
+               asan:0,
+               debug_devtools:'node',
+               force_dynamic_crt:0,
+               host_arch:'x64',
+               icu_data_file:'icudt57l.dat',
+               icu_data_in:'../../deps/icu-small/source/data/in/icudt57l.dat',
+               icu_endianness:'l',
+               icu_gyp_path:'tools/icu/icu-generic.gyp',
+               icu_locales:'en,root',
+               icu_path:'deps/icu-small',
+               icu_small:true,
+               icu_ver_major:'57',
+               llvm_version:0,
+               node_byteorder:'little',
+               node_enable_d8:false,
+               node_enable_v8_vtunejit:false,
+               node_install_npm:true,
+               node_module_version:48,
+               node_no_browser_globals:false,
+               node_prefix:'/usr/local',
+               node_release_urlbase:'https://nodejs.org/download/release/',
+               node_shared:false,
+               node_shared_cares:false,
+               node_shared_http_parser:false,
+               node_shared_libuv:false,
+               node_shared_openssl:false,
+               node_shared_zlib:false,
+               node_tag:'',
+               node_use_bundled_v8:true,
+               node_use_dtrace:true,
+               node_use_etw:false,
+               node_use_lttng:false,
+               node_use_openssl:true,
+               node_use_perfctr:false,
+               node_use_v8_platform:true,
+               openssl_fips:'',
+               openssl_no_asm:0,
+               shlib_suffix:'48.dylib',
+               target_arch:'x64',
+               uv_parent_path:'/deps/uv/',
+               uv_use_dtrace:true,
+               v8_enable_gdbjit:0,
+               v8_enable_i18n_support:1,
+               v8_inspector:true,
+               v8_no_strict_aliasing:1,
+               v8_optimized_debug:0,
+               v8_random_seed:0,
+               v8_use_snapshot:true,
+               want_separate_host_toolset:0,
+               xcode_version:'7.0'
+            }
+         },
+         emitWarning:[
+            Function
+         ],
+         nextTick:[
+            Function:nextTick
+         ],
+         _tickCallback:[
+            Function:_tickDomainCallback
+         ],
+         _tickDomainCallback:[
+            Function:_tickDomainCallback
+         ],
+         stdout:[
+            Getter
+         ],
+         stderr:[
+            Getter
+         ],
+         stdin:[
+            Getter
+         ],
+         openStdin:[
+            Function
+         ],
+         exit:[
+            Function
+         ],
+         kill:[
+            Function
+         ],
+         argv0:'node'
+      }
+      </code>
+   </pre>
+</body>
+</html>
+
