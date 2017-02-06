@@ -1,0 +1,15 @@
+{
+  "name": "myownmodule",
+  "version": "0.1.0",
+  "description": "A demo module that prints some stuff to the console",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "logger",
+    "module"
+  ],
+  "author": "Gabriel Ferraz",
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "node-repl-snipppets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arguments.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naxus28/nodePractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naxus28/nodePractice/issues"
+  },
+  "homepage": "https://github.com/Naxus28/nodePractice#readme",
+  "devDependencies": {
+    "winston": "https://github.com/winstonjs/winston/tarball/master"
+  },
+  "dependencies": {
+    "myownmodule": "file:myOwnModule"
+  }
+}

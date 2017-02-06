@@ -35,3 +35,14 @@ var colors = require('colors');
   * and finally a '.node' file, which it treats as a compiled file.
   * This happens for external modules as well as for files we create (i.e. in this directory. if we "require('node-env')" node will require 'node-env.js', not 'node-env.json')
   */
+
+ /* Note3: if a package will be used from the command line, we need to install it globally using flag '-g'. i.d. npm install -g gulp
+  * if thd module is only needed for a project, install it in the node_modules of that project (simple install without the flag -g)
+	*/
+
+	/* Note4: we can download a module from the node website or from github
+	 * from node we use the package name, such as 'npm install winston'
+	 * from github we need to provide the repository url and a pound sign followed by the branch: 'https://github.com/winstonjs/winston#master' or 'https://github.com/winstonjs/winston/tarball/master'
+	 */
+
+
