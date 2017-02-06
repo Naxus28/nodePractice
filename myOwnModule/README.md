@@ -20,11 +20,11 @@ module.exports = print;
 
 2.) **npm install ../print** (assuming 'testmodule' and 'print' are at the same level)
 
-3.) enter the node REPL by typing 'node' on the terminal window
+3.) enter the node REPL by typing **node** on the terminal window
 
-4.) var print = require('print'); //assuming you used the name node suggested when you initiated the 'print' package (node uses the same name as the parent directory ny default)
+4.) > var print = require('print'); //assuming you used the name node suggested when you initiated the 'print' package (node uses the same name as the parent directory ny default)
 
-5.) print('Hello World'); //should print 'Hello World' on the console
+5.) > print('Hello World'); //should print 'Hello World' on the console
 
 -----2-----
 
