@@ -1,9 +1,13 @@
 **Steps to create a module (our module will be a simple utility that prints messages to the console)**
 
-1.) *mkdir print*
-2.) *cd print && npm init*
+1.) **mkdir print**
+
+2.) **cd print && npm init**
+
 3.) fill out the questions (change version to 0.1.0 and license to MIT if applicable)
+
 4.) write code on the entry point file 'index.js' (we can have other files with utility methods and require those files in 'index.js')
+
 5.) index.js needs to export the functionality we built as methods.
 ```javascript
 var print = (value) => console.log(value);
