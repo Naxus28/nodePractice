@@ -16,9 +16,9 @@ module.exports = print;
 
 -----1-----
 
-1.) *mkdir testmodule && cd testmodule*
+1.) **mkdir testmodule && cd testmodule**
 
-2.) *npm install ../print* (assuming 'testmodule' and 'print' are at the same level)
+2.) **npm install ../print** (assuming 'testmodule' and 'print' are at the same level)
 
 3.) enter the node REPL by typing 'node' on the terminal window
 
@@ -30,11 +30,11 @@ module.exports = print;
 
 1.) Same as above
 
-2.) *npm init* (use default options since this directory is just for testing)
+2.) **npm init** (use default options since this directory is just for testing)
 
-3.) *npm install ../print --save-dev* (when this is finished you should see 'print' as a dependency in your package.json)
+3.) **npm install ../print --save-dev** (when this is finished you should see 'print' as a dependency in your package.json)
 
-4.) *vim/nano index.js* (file name doesn't matter here but use 'index.js' for good practice)
+4.) **vim/nano index.js** (file name doesn't matter here but use 'index.js' for good practice)
 
 5.) Write the code for test.js:
 ```javascript
@@ -42,4 +42,4 @@ var print = require('print')
 print('Hello World');
 ```
 
-6.) On the terminal window, run *node index* (you should see 'Hello World' printed on terminal)
+6.) On the terminal window, run **node index** (you should see 'Hello World' printed on terminal)
