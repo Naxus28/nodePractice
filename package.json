@@ -19,7 +19,5 @@
   "devDependencies": {
     "winston": "https://github.com/winstonjs/winston/tarball/master"
   },
-  "dependencies": {
-    "myownmodule": "file:myOwnModule"
-  }
+  "dependencies": {}
 }

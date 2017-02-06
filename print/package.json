@@ -1,14 +1,14 @@
 {
-  "name": "myownmodule",
+  "name": "print",
   "version": "0.1.0",
-  "description": "A demo module that prints some stuff to the console",
+  "description": "A simple utility module that prints to the console",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "keywords": [
-    "logger",
-    "module"
+    "print",
+    "console.log"
   ],
   "author": "Gabriel Ferraz",
   "license": "MIT"
