@@ -1,4 +1,6 @@
-//these are some notes for this file session. Please don't delete them!
+// callbacks are at the core of node processess.
+// They allow node to perform faster because the process doesn't stop when a function is called since the function that works as a wrapper for the callback will always return
+
 let numbers = [1, 2, 3];
 
 let numSum = (numbers) => {

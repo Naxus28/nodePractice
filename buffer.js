@@ -53,6 +53,14 @@ var array = [buf4, buf1, buf2];
 array.sort(Buffer.compare); // prints [ <Buffer 30 31 32 33>, <Buffer 31 32 33 34>, <Buffer 35 36 37 38> ]
 array.sort(Buffer.compare).toString(); // prints '0123,1234,5678'
 
-
+// we can slice the buffer
+var buf = new Buffer('Hello Gabriel!');
+// first param is the offset (or index where the slice starts), and second is the length to be sliced (counting the first index)
+var buf1 = buf.slice(0, 4);
+buf1.toString() // prints 'Hell'
+// notice: 'buf1' is not a new buffer but simply a pointer to the first four characters of 'buf'
+// so if we change 'buf1' we will also change 'buf'
+buf1.write('xyzw');
+buf1.toString(); // prints 'xyzwo Gabriel!'
 
 
