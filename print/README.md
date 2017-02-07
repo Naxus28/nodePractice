@@ -47,3 +47,18 @@ print('Hello World');
 ```
 
 6.) On the terminal window, run **node index** (you should see 'Hello World' printed on terminal)
+
+
+**Items you need to publish a module**
+
+
+1.) The module itself
+
+2.) package.json complete (with a git repo)
+
+3.) Test code
+
+4.) A README.md file describing the module and explaining how to use it
+
+
+
