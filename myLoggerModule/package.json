@@ -11,5 +11,9 @@
     "console.log"
   ],
   "author": "Gabriel Ferraz",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "cli-color": "^1.1.0"
+  }
 }
