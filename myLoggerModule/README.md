@@ -24,7 +24,7 @@ module.exports = {
 var logger = require('logger');
 logger.log('Hello World')); //should log 'Hello World' to the console
 
-/* a module can also export its member functions individually such as below.
+/* a module can also export its member methods individually such as below.
  * Like in the case above, the methods exported here can't be accessed directly because they are members of the exported module object
  */
 
@@ -40,7 +40,7 @@ var logger = require('logger');
 logger.log('Hello World')); //logs'Hello World' to the console
 ```
 
-The 'logger' module will only perform one function: log messages to the console. We can therefore export the method in such a way that we can use it directly (keep in mind this is not the case for the majority of modules. I am just doing it this way to illustrate how 'exports' works):
+The 'logger' module will only perform one function: log messages to the console. We can therefore export the method as the module itself so we can use it directly (keep in mind this is not how the majority of modules is designed. I am just doing it this way to illustrate different uses of 'exports'):
 ```javascript
 // ES6
 var log = (value) => console.log(value);
@@ -66,11 +66,11 @@ _This is not a unit test. We will simply implement the module and see if it does
 
 1.) **mkdir test && cd test**
 
-2.) **npm install ../myLoggerModule** (assuming '/test' and '/myLoggerModule' are at the same level)
+2.) **npm install ../logger** (assuming '/test' and '/logger' are at the same level)
 
 3.) enter the node REPL by typing **node** on the terminal window
 
-4.) > var logger = require('logger'); // 'require' looks for the module name. When the module's package.json is created, node uses the same name as the parent directory by default. In this case I changed the name from 'myLoggerModule' (the parent directory of package.json) to 'logger'
+4.) > var logger = require('logger'); // 'require' looks for the module name. When the module's package.json is created, node uses the same name as the parent directory by default (that can be changed when creating 'package.json' or later, by renaming the module in 'package.json' when the file has already been created).
 
 5.) > logger // this will log the 'logger' module to the console and allow us to check if 'logger' is an object that **case 1)** has member methods (logs _{ log: [Function: log] }_) or if **case 2)** it is the method itself (logs _[Function: log]_)
 
@@ -93,7 +93,7 @@ log('Hello World')); //logs 'Hello World' to the console
 
 2.) **npm init** (use default options since this directory is just for testing)
 
-3.) **npm install ../myLoggerModule --save-dev** (when this is finished you should see 'logger' as a dependency in your package.json)
+3.) **npm install ../logger --save-dev** (when this is finished you should see 'logger' as a dependency in your package.json)
 
 4.) **vim/nano index.js** (file name doesn't matter here because the script will be ran manually for testing but use 'index.js' for good practice)
 
