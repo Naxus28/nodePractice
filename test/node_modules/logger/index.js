@@ -12,13 +12,13 @@ module.exports = log;
 // if we use either construction below we can't use the method directly
 // usage:  var logger = require('logger'); logger.log('hello world');
 
-// module.exports = {
-// 	log: function(value) {
-// 		console.log(value)
-// 	}
-// }
+module.exports = {
+	log: function(value) {
+		console.log(value)
+	}
+}
 // or
-// exports.log = (value) => console.log(value);
+exports.log = (value) => console.log(value);
 
 
 

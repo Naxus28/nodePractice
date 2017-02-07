@@ -8,28 +8,7 @@
 
 4.) write code on the entry point file 'index.js' (we can have other files with utility methods and require those files in 'index.js')
 
-5.) index.js needs to export the functionality we built as methods.
-```javascript
-var logger = (value) => console.log(value);
-module.exports = logger;
-```
-
-
-**Test module (_There are different ways to test the module_)**
-
-
------1-----
-
-1.) **mkdir testmodule && cd testmodule**
-
-2.) **npm install ../myLoggerModule** (assuming '/test' and '/myLoggerModule' are at the same level)
-
-3.) enter the node REPL by typing **node** on the terminal window
-
-4.) > var logger = require('logger'); //assuming you used the name node suggested when you initiated the 'logger' package (when you create the package.json for the module, node uses the same name as the parent directory by default. In this case I changed the name from 'myLoggerModule' to 'logger')
-
-5.) Modules can be exported in different ways. It is important to know if the module exported is the method itself and can be invoked directly (i.e. logger('Hello World')) or
-if the module is an object in which the function is a key/pair value. Because modules normally perform more than one action, they are normally exported as objects with many functions, like so:
+5.) index.js needs to export the functionality we built as methods. Modules can be exported in different ways. It is important to know if the module exported is the method itself and can be invoked directly (i.e. logger('Hello World')) or if the module is an object in which the function is a key/pair value. Because modules normally perform more than one action, they are normally exported as objects with many functions, like so:
 ```javascript
 module.exports = {
 	log: function(value) {
@@ -72,6 +51,34 @@ module.exports = log;
 
 
 // usage:
+var log = require('logger');
+log('Hello World')); //should log 'Hello World' on the console
+```
+
+**Test module (_There are different ways to test the module_)**
+
+
+-----1-----
+
+1.) **mkdir testmodule && cd testmodule**
+
+2.) **npm install ../myLoggerModule** (assuming '/test' and '/myLoggerModule' are at the same level)
+
+3.) enter the node REPL by typing **node** on the terminal window
+
+4.) > var logger = require('logger'); //assuming you used the name node suggested when you initiated the 'logger' package (when you create the package.json for the module, node uses the same name as the parent directory by default. In this case I changed the name from 'myLoggerModule' to 'logger')
+
+5.) > logger // this will log the 'logger' module to the console so we will know if 'logger' is an object that has member methods: case 1)(logs '{ log: [Function: log] }') or if it is the method itself: case 2)(logs '[Function: log]')
+
+
+```javascript
+
+// usage:
+// if case 1
+var logger = require('logger');
+logger.log('Hello World'));
+
+// if case 2
 var log = require('logger');
 log('Hello World')); //should log 'Hello World' on the console
 ```
