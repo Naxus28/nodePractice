@@ -1,5 +1,5 @@
 {
-  "name": "print",
+  "name": "logger",
   "version": "0.1.0",
   "description": "A simple utility module that prints to the console",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "keywords": [
-    "print",
+    "logger",
     "console.log"
   ],
   "author": "Gabriel Ferraz",
