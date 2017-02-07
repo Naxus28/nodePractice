@@ -1,4 +1,4 @@
-**Steps to create a module (our module will be a simple utility that logs messages to the console)**
+**STEPS TO CREATE A MODULE (our module will be a simple utility that logs messages to the console)**
 
 1.) **mkdir logger**
 
@@ -58,7 +58,7 @@ log('Hello World')); //logs 'Hello World' on the console
 ```
 
 
-**Test if the module works (_There are different ways to test the module_)**
+**TEST IF THE MODULE WORKS (_There are different ways to test the module_)**
 _This is not a unit test. We will simply implement the module and see if it does what it should_
 
 
@@ -111,7 +111,8 @@ log('Hello World');
 6.) On the terminal window, run **node index** (logs 'Hello World' to the console)
 
 
-**Publishing a module**
+**PUBLISHING A MODULE**
+
 _Items you need to publish a module_
 
 1.) The module itself
