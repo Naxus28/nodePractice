@@ -122,7 +122,7 @@ _Items you need to publish a module_
 
 4.) A README.md file describing the module, explaining how it works and how to use it
 
-**Once these items are completed, follow these steps to publish the module: https://docs.npmjs.com/getting-started/publishing-npm-packages**
+**Once these items are completed, follow these steps to publish the module and you are done!: https://docs.npmjs.com/getting-started/publishing-npm-packages**
 
 
 
