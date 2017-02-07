@@ -111,6 +111,7 @@ log('Hello World');
 6.) On the terminal window, run **node index** (logs 'Hello World' to the console)
 
 
+
 **PUBLISHING A MODULE**
 
 _Items you need to publish a module_
