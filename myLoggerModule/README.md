@@ -70,9 +70,9 @@ _This is not a unit test. We will simply implement the module and see if it does
 
 3.) Enter the node REPL by typing **node** on the terminal window
 
-4.) Type **var logger = require('logger');** and press 'enter/return'. You will see 'undefined' on the console. This is because this line of code doesn't return anything when interpreted (you may see the same behavior on browser's 'console') // Keep in mind 'require' looks for the module name. When the module's package.json is created, node uses the same name as the parent directory by default (that can be changed when creating 'package.json' or later, by renaming the module in 'package.json' after the file has already been created).
+4.) Type **var logger = require('logger');** and press 'enter/return'. You will see 'undefined' on the console. This is because this line of code doesn't return anything when interpreted (you may see the same behavior on browsers' 'console' panel) // Keep in mind 'require' looks for the module name. When the module's package.json is created, node uses the same name as the parent directory by default (that can be changed when creating 'package.json' or later, by renaming the module in 'package.json' after the file has already been created).
 
-5.) Now type **logger**. This will log the 'logger' module to the console and allow us to check if 'logger' is an object that **case 1)** has member methods (_{ log: [Function: log] }_) or if **case 2)** 'logger' is the method itself (_[Function: log]_)
+5.) Now type **logger**. This will log the 'logger' module to the console and allow us to check if 'logger' is an object that **case 1)** has member methods (you should see _{ log: [Function: log] }_ on the console) or if **case 2)** 'logger' is the method itself (you should see _[Function: log]_ on the console)
 
 
 ```javascript
@@ -93,9 +93,9 @@ log('Hello World')); //logs 'Hello World' to the console
 
 2.) On the terminal window run **npm init** (use default options since this directory is just for testing)
 
-3.) Then **npm install ../logger --save-dev** (when this is finished you should see 'logger' as a dev dependency in your package.json)
+3.) Then run **npm install ../logger --save-dev** (when this is finished you should see 'logger' as a dev dependency in your package.json)
 
-4.) Finally, run **vim/nano index.js** to create the the file where you will 'require' the 'logger' module (the file name doesn't matter here because we will run this script manually but use 'index.js' for good practice)
+4.) Finally, run **vim (or nano/pico) index.js** to create the the file where you will 'require' the 'logger' module (the file name doesn't matter here because we will run this script manually but use 'index.js' for good practice)
 
 5.) Write the code for test.js:
 ```javascript
@@ -111,8 +111,8 @@ log('Hello World');
 6.) On the terminal window, run **node index** (logs 'Hello World' to the console)
 
 
-**Items you need to publish a module**
-
+**Publishing a module**
+_Items you need to publish a module_
 
 1.) The module itself
 
@@ -121,6 +121,8 @@ log('Hello World');
 3.) Unit test code
 
 4.) A README.md file describing the module, explaining how it works and how to use it
+
+**Once these items are completed, follow these steps to publish the module: https://docs.npmjs.com/getting-started/publishing-npm-packages**
 
 
 
