@@ -66,13 +66,13 @@ _This is not a unit test. We will simply implement the module and see if it does
 
 1.) **mkdir test && cd test**
 
-2.) **npm install ../logger** (assuming '/test' and '/logger' are at the same level)
+2.) On the terminal window run **npm install ../logger** (assuming '/test' and '/logger' are at the same level)
 
-3.) enter the node REPL by typing **node** on the terminal window
+3.) Enter the node REPL by typing **node** on the terminal window
 
-4.) > var logger = require('logger'); // 'require' looks for the module name. When the module's package.json is created, node uses the same name as the parent directory by default (that can be changed when creating 'package.json' or later, by renaming the module in 'package.json' when the file has already been created).
+4.) Type **var logger = require('logger');** and press 'enter/return'. You will see 'undefined' on the console. This is because this line of code doesn't return anything when interpreted (you may see the same behavior on browser's 'console') // Keep in mind 'require' looks for the module name. When the module's package.json is created, node uses the same name as the parent directory by default (that can be changed when creating 'package.json' or later, by renaming the module in 'package.json' after the file has already been created).
 
-5.) > logger // this will log the 'logger' module to the console and allow us to check if 'logger' is an object that **case 1)** has member methods (logs _{ log: [Function: log] }_) or if **case 2)** it is the method itself (logs _[Function: log]_)
+5.) Now type **logger**. This will log the 'logger' module to the console and allow us to check if 'logger' is an object that **case 1)** has member methods (_{ log: [Function: log] }_) or if **case 2)** 'logger' is the method itself (_[Function: log]_)
 
 
 ```javascript
@@ -83,7 +83,7 @@ var logger = require('logger');
 logger.log('Hello World'));
 
 // if case 2
-var log = require('logger');
+var log = require('logger'); // in this case, it makes sense to store the module in a variable named 'log' instead of logger
 log('Hello World')); //logs 'Hello World' to the console
 ```
 
@@ -91,11 +91,11 @@ log('Hello World')); //logs 'Hello World' to the console
 
 1.) Same as above
 
-2.) **npm init** (use default options since this directory is just for testing)
+2.) On the terminal window run **npm init** (use default options since this directory is just for testing)
 
-3.) **npm install ../logger --save-dev** (when this is finished you should see 'logger' as a dependency in your package.json)
+3.) Then **npm install ../logger --save-dev** (when this is finished you should see 'logger' as a dev dependency in your package.json)
 
-4.) **vim/nano index.js** (file name doesn't matter here because the script will be ran manually for testing but use 'index.js' for good practice)
+4.) Finally, run **vim/nano index.js** to create the the file where you will 'require' the 'logger' module (the file name doesn't matter here because we will run this script manually but use 'index.js' for good practice)
 
 5.) Write the code for test.js:
 ```javascript
