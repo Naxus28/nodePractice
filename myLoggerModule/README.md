@@ -59,6 +59,7 @@ log('Hello World')); //logs 'Hello World' on the console
 
 
 **TEST IF THE MODULE WORKS (_There are different ways to test the module_)**
+
 _This is not a unit test. We will simply implement the module and see if it does what it should_
 
 
