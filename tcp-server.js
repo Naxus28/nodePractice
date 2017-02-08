@@ -32,7 +32,7 @@ server.listen(3000, function(){
   console.log('server started');
 });
 
-optionally, include a specific IP address
+//optionally, include a specific IP address
 server.listen(3000, '192.168.1.1', function(){
   console.log('server started');
 });

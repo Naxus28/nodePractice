@@ -28,17 +28,18 @@ const ArgumentException = require('./helperClasses/Errors.js').ArgumentException
 // usage:  let logger = require('logger'); logger.log('hello world');
 
 module.exports = {
-	log: function(value, logType, next) {
+	log: function(message, logType, next) {
 		if (logType) {
 			if (config.logTypes[logType]) {
-				value = config.logTypes[logType](value);
+				message = config.logTypes[logType](message);
 			} else {
 				let exception = new ArgumentException(config.exceptions.argumentException.exceptionType, config.exceptions.argumentException.message);
-				return exception.toString();
+				console.log(exception.toString());
+				return;
 			}
 		}
-		console.log(value);
-		next && next();
+		console.log(message);
+		next && next(); // invokes callback if there is one
 	}
 }
 // or

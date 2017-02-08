@@ -8,8 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "logger": "file:///Users/imtloaner317/Desktop/practice/nodeREPLSnippets/myLoggerModule"
+    "logger": "file:///Users/gabrielferraz/Desktop/nodePractice/myLoggerModule"
   }
 }

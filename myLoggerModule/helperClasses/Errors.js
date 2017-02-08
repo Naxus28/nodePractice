@@ -2,9 +2,9 @@ const util = require('util');
 const config = require('../config');
 
 class ExceptionsHandler {
-	constructor(message, exception) {
-   	this.message = message;
-   	this.exception = exception;
+	constructor(exception, message) {
+   		this.exception = exception;
+   		this.message = message;
 	}
 
 	formatError() {
@@ -12,12 +12,13 @@ class ExceptionsHandler {
 			exception: this.exception,
 			message: this.message
 		};
-		return config.logTypes['error'](util.inspect(errorObj));
+		
+		return new Error(util.inspect(errorObj)); // need util.inspect to drill into the object and get key/value pairs (otherwise it prints [Object Object])
 	}
 
 	toString() {
 		let formattedError = this.formatError();
-		return new Error(formattedError);
+		console.log(config.pe.render(formattedError));
 	}
 }
 
