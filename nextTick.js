@@ -1,4 +1,4 @@
-// functions
+a// functions
 let logger = (param) => {
 	param = param || 'No arg passed';
  	console.log(param);
